@@ -1,0 +1,20 @@
+{
+    "name": "mbmjertan/keksphp",
+    "description": "KEKS Pay - PHP implementacija",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mario Borna Mjertan",
+            "email": "mbm@educateam.hr"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.3"
+    },
+    "autoload":{
+        "psr-4": {
+            "KeksPHP\\": "src/"
+        }
+    }
+}
