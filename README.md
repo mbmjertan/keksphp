@@ -143,9 +143,9 @@ echo json_encode($Response);
 
 KeksPHP will now:
 
-	* check if your TID in KeksSeller matches the TID in the advice recieved
-	* check if the transaction has cleared (status == 0)
-	* call your validation closure with the advice recieved
+* check if your TID in KeksSeller matches the TID in the advice recieved
+* check if the transaction has cleared (status == 0)
+* call your validation closure with the advice recieved
 
 If any of these checks fail, KeksPHP will throw a `KeksIntegrationException`, handle it and log it into the `handledExceptions` member array of the KeksTransactions instance, which you can access with the `getExceptions` method to check what went wrong. 
 
