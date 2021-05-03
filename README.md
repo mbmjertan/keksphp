@@ -41,6 +41,7 @@ $KeksSeller->tid = "P00222";
 $KeksSeller->setHashKey("SOMEHASHKEYPROVIDEDBYKEKS");
 
 ```
+In production enviroments, you'll also need to change the API base and deep link base to values given by the KEKS Pay team.
 
 If your success and failure URLs are fixed for *every* transaction, you can set the successRedirect and failRedirect members of the class instance respectively, like so:
 
@@ -141,6 +142,7 @@ echo json_encode($Response);
 ```
 
 KeksPHP will now:
+
 	* check if your TID in KeksSeller matches the TID in the advice recieved
 	* check if the transaction has cleared (status == 0)
 	* call your validation closure with the advice recieved
